@@ -42,8 +42,6 @@ services:
       traefik.http.routers.sio-user.tls: "true"
       traefik.http.routers.sio-user.tls.certresolver: myresolver
       traefik.http.services.sio-user.loadbalancer.server.port: "3001"
-      traefik.http.middlewares.sio-user-middleware.stripprefix.prefixes: /auth
-      traefik.http.routers.sio-user.middlewares: sio-user-middleware
 
     restart: unless-stopped
 
