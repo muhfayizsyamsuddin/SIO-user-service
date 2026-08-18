@@ -22,7 +22,7 @@ services:
     restart: unless-stopped
 
   user-service:
-    build: .
+    image: faizms14/sio-user-service:latest
     container_name: sio-user-service
     env_file:
       - .env
