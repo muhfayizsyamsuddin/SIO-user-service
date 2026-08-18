@@ -37,7 +37,7 @@ services:
     labels:
       traefik.enable: "true"
       traefik.docker.network: proxy_net
-      traefik.http.routers.sio-user.rule: "Host(`api-sioms.faizms.com`) && (PathPrefix(`/auth`) || PathPrefix(`/users`))"
+      traefik.http.routers.sio-user.rule: "Host(`sioms.faizms.com`) && (PathPrefix(`/auth`) || PathPrefix(`/users`))"
       traefik.http.routers.sio-user.entrypoints: websecure
       traefik.http.routers.sio-user.tls: "true"
       traefik.http.routers.sio-user.tls.certresolver: myresolver
